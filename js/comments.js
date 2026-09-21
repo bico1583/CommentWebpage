@@ -41,9 +41,16 @@ function addComment(parentId) {
         ? document.getElementById("comment-input")
         : document.getElementById(`reply-input-${parentId}`);
 
+    const message = parentId === null
+        ? document.getElementById("moderation-message")
+        : document.getElementById(
+            `reply-moderation-message-${parentId}`
+        );
+
     const text = input.value.trim();
 
     if (!text) {
+        message.textContent = "Comment cannot be empty.";
         return;
     }
 
@@ -87,7 +94,6 @@ function addComment(parentId) {
         renderComments();
     };
 }
-
 
 function showModerationMessage(parentId, word) {
     const message = parentId === null
