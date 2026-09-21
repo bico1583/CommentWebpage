@@ -53,7 +53,7 @@ function addComment(parentId) {
         return;
     }
 
-    const worker = new Worker("users/comment-user.js");
+    const worker = new Worker("workers/moderator.js");
 
     worker.postMessage({
         text: text
