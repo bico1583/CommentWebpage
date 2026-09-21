@@ -102,6 +102,7 @@ function registerUser() {
 
     renderAuthentication();
     renderCommentForm();
+    renderComments();
 }
 
 
@@ -136,6 +137,7 @@ function loginUser() {
 
     renderAuthentication();
     renderCommentForm();
+    renderComments();
 }
 
 
