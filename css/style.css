@@ -5,21 +5,35 @@
 body {
     margin: 0;
     background-color: #F5F5F5;
-    font-family: 'Lucida Handwriting', cursive;
+    font-family: 'Lucida Handwriting';
     font-size: 18px;
-    color: #222222;
 }
-
-button,
-textarea,
-input {
-    font-family: inherit;
-    font-size: inherit;
-}
-
 
 .page {
     width: 70%;
-    min-height: 100vh;
     margin: 0 auto;
+}
+
+.reply-button {
+    background-color: #FFFFFF;
+    color: #00325A;
+}
+
+.reply-button:hover {
+    background-color: #00325A;
+    color: #FFFFFF;
+}
+
+.add-comment-button {
+    background-color: #FFFFFF;
+    color: #DE5050;
+}
+
+.add-comment-button:hover {
+    background-color: #DE5050;
+    color: #FFFFFF;
+}
+
+.moderation-message {
+    color: #FF8300;
 }
