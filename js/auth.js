@@ -146,4 +146,5 @@ function logoutUser() {
 
     renderAuthentication();
     renderCommentForm();
+    renderComments();
 }
