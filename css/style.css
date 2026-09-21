@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #F5F5F5;
+    font-family: 'Lucida Handwriting', cursive;
+    font-size: 18px;
+    color: #222222;
+}
+
+button,
+textarea,
+input {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+
+.page {
+    width: 70%;
+    min-height: 100vh;
+    margin: 0 auto;
+}
