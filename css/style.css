@@ -53,35 +53,35 @@ body {
 }
 
 .comment-depth-1 {
-    margin-left: 12px;
+    margin-left: 6px;
 }
 
 .comment-depth-2 {
-    margin-left: 22px;
+    margin-left: 11px;
 }
 
 .comment-depth-3 {
-    margin-left: 30px;
+    margin-left: 15px;
 }
 
 .comment-depth-4 {
-    margin-left: 36px;
+    margin-left: 18px;
 }
 
 .comment-depth-5 {
-    margin-left: 41px;
+    margin-left: 20px;
 }
 
 .comment-depth-6 {
-    margin-left: 45px;
+    margin-left: 22px;
 }
 
 .comment-depth-7 {
-    margin-left: 48px;
+    margin-left: 24px;
 }
 
 .comment-depth-8,
 .comment-depth-9,
 .comment-depth-10 {
-    margin-left: 50px;
+    margin-left: 25px;
 }
