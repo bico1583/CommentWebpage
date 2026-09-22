@@ -46,7 +46,7 @@ function addComment(parentId) {
         : document.getElementById(
             `reply-moderation-message-${parentId}`
         );
-
+    message.textContent = "";
     const text = input.value.trim();
 
     if (!text) {
@@ -126,16 +126,18 @@ function renderComments() {
 
     rootComments.forEach(function (comment) {
         container.appendChild(
-            createCommentElement(comment, comments)
+            createCommentElement(comment, comments, 0)
         );
     });
 }
 
 
-function createCommentElement(comment, comments) {
+function createCommentElement(comment, comments, depth) {
     const commentElement = document.createElement("div");
 
-    commentElement.className = "comment";
+    const visualDepth = Math.min(depth, 8);
+
+    commentElement.className = `comment comment-depth-${visualDepth}`;
 
     const author = document.createElement("div");
 
@@ -186,7 +188,7 @@ function createCommentElement(comment, comments) {
 
         replies.forEach(function (reply) {
             repliesContainer.appendChild(
-                createCommentElement(reply, comments)
+                createCommentElement(reply, comments, depth + 1)
             );
         });
 
