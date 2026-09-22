@@ -21,9 +21,13 @@ function renderAuthentication() {
     const authSection = document.getElementById("auth-section");
     const currentUser = getCurrentUser();
 
-    if (currentUser) {
-        authSection.innerHTML = `
-            <span>Logged in as ${currentUser}</span>
+if (currentUser) {
+    authSection.innerHTML = `
+        <div class="auth-user">
+            <span class="auth-user-name">
+                Logged in as ${currentUser}
+            </span>
+
             <button
                 id="logout-button"
                 class="logout-button"
@@ -31,10 +35,11 @@ function renderAuthentication() {
             >
                 Logout
             </button>
-        `;
+        </div>
+    `;
 
-        return;
-    }
+    return;
+}
 
     authSection.innerHTML = `
         <input

@@ -91,6 +91,9 @@ function addComment(parentId) {
 
         worker.terminate();
 
+        input.value = "";
+        message.textContent = "";
+
         renderComments();
     };
 }
